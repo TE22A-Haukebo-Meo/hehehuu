@@ -24,6 +24,29 @@ public class App {
 
         System.out.println(täljare+"/"+nämnare+"="+blandad+" "+modulo+"/"+nämnare);
 
+        tb.nextLine();
 
+        System.out.println("Ange timmar");
+        int timmar = tb.nextInt();
+        System.out.println("Ange minuter");
+        int min = tb.nextInt();
+        System.out.println("Ange sekunder");
+        int sek = tb.nextInt();
+
+        tb.nextLine();
+
+        double minTim = (double)min/60;
+        double sekTim = (double)sek/3600;
+        double timmeh = timmar+minTim+sekTim;
+
+        double timMin = (double)timmar*60;
+        double sekMin = (double)sek/60;
+        double minuter = min+timMin+sekMin;
+
+        double timSek = timmar*3600;
+        double minSek = min*60;
+        double sekunder = sek+timSek+minSek;
+
+        System.out.println(timmeh+" h = "+minuter+" min = "+sekunder+" s");
     }
 }
