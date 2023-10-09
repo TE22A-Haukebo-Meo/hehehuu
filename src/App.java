@@ -15,5 +15,15 @@ public class App {
         tb.nextLine();
 
         System.out.println("Droppa en såndär täljare");
+        int täljare = tb.nextInt();
+        System.out.println("Droppa en nämnare");
+        int nämnare = tb.nextInt();
+
+        int blandad = täljare/nämnare;
+        int modulo = täljare%nämnare;
+
+        System.out.println(täljare+"/"+nämnare+"="+blandad+" "+modulo+"/"+nämnare);
+
+
     }
 }
