@@ -6,8 +6,14 @@ public class App {
         System.out.println("Droppa ett feeeetttt tal");
         Scanner tb = new Scanner(System.in);
         int tal = tb.nextInt();
-        int split = tal/1000;
+        int rund = tal+500;
+        int split = rund/1000;
         int klar = split*1000;
+
         System.out.println(tal+" avrundat till närmaste tuental blir: "+klar);
+        
+        tb.nextLine();
+
+        System.out.println("Droppa en såndär täljare");
     }
 }
